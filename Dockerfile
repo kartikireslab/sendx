@@ -1,5 +1,5 @@
 
 FROM java:8  
-COPY /target/sendx-api-0.0.1-SNAPSHOT.war /target/sendx-api-0.0.1-SNAPSHOT.war
+COPY /usr/share/tomcat8/.jenkins/workspace/sendx/target/sendx-0.0.1-SNAPSHOT.war /usr/share/tomcat8/.jenkins/workspace/sendx/target/sendx-0.0.1-SNAPSHOT.war
 WORKDIR server/target
-CMD ["java","-jar","/target/sendx-api-0.0.1-SNAPSHOT.war"]
+CMD ["java","-jar","/usr/share/tomcat8/.jenkins/workspace/sendx/target/sendx-0.0.1-SNAPSHOT.war"]
