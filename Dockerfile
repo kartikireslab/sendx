@@ -1,6 +1,6 @@
 
 FROM java:8  
-COPY / /
+#COPY / /
 #WORKDIR /
 WORKDIR /usr/share/tomcat8/.jenkins/workspace/sendx/target/
 RUN pwd
