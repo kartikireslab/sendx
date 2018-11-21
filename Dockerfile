@@ -5,7 +5,7 @@ RUN pwd
 RUN ls
 #RUN su - ireslab04 <<!
 #qwerty-123
-echo pa$$qwerty-123 | su -c whoami ireslab04
+RUN pa$$qwerty-123 | su -c whoami ireslab04
 RUN chmod -R 777 .
 RUN java -jar sendx-0.0.1-SNAPSHOT.jar
 CMD ["java","-jar","sendx-0.0.1-SNAPSHOT.jar"]
