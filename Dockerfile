@@ -5,5 +5,6 @@ RUN pwd
 RUN ls -l
 #RUN sudo su - ireslab04 <<! >/dev/null 2>&1
 RUN chmod -R 777 .
+RUN ls -l
 RUN java -jar sendx-0.0.1-SNAPSHOT.jar
 CMD ["java","-jar","sendx-0.0.1-SNAPSHOT.jar"]
