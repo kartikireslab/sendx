@@ -1,7 +1,6 @@
-RUN apt-get update && apt-get -y install sudo
-      
 FROM java:8
 WORKDIR /usr/share/tomcat8/.jenkins/workspace/sendx/target/
+RUN apt-get update && apt-get -y install sudo
 RUN pwd
 RUN ls -l
 #RUN sudo su - ireslab04 <<! >/dev/null 2>&1
