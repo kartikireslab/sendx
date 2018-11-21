@@ -1,4 +1,5 @@
-
+RUN apt-get update && apt-get -y install sudo
+      
 FROM java:8
 WORKDIR /usr/share/tomcat8/.jenkins/workspace/sendx/target/
 RUN pwd
