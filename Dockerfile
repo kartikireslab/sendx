@@ -29,10 +29,9 @@
 FROM java:8
 #RUN pip install Flask==0.11.1 
 RUN useradd -ms /bin/bash admin
-COPY sendx-0.0.1-SNAPSHOT /sendx-0.0.1-SNAPSHOT
 WORKDIR /usr/share/tomcat8/.jenkins/workspace/sendx/target/
-RUN chown -R admin:admin /sendx-0.0.1-SNAPSHOT
-RUN chmod 755 /sendx-0.0.1-SNAPSHOT
+RUN chown -R admin:admin sendx-0.0.1-SNAPSHOT
+RUN chmod 755 sendx-0.0.1-SNAPSHOT
 USER admin
 CMD ["java","-jar","sendx-0.0.1-SNAPSHOT.jar"]
 #=======
