@@ -14,7 +14,7 @@ pipeline {
     } 
   stage('Docker Build') {
       agent any
-      steps {
+      steps { 
         sh 'docker build -t sendx:latest .'
       }
     }
