@@ -1,6 +1,6 @@
 FROM java:8
 WORKDIR /usr/share/tomcat8/.jenkins/workspace/sendx/target/
-RUN chmod 775 /home/start.sh
+RUN chmod 777 /home/start.sh
 CMD ["/home/start.sh"]
 #EXPOSE 8080
 
