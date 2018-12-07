@@ -35,6 +35,6 @@
 
 
 FROM java:8  
-COPY / /
+#COPY / /
 WORKDIR server/target
 CMD ["java","-jar","/target/sendx-api-0.0.1-SNAPSHOT.war"]
