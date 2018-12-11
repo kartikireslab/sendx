@@ -10,7 +10,7 @@ pipeline {
       steps {
 		echo 'Making build.'
 		sh 'mvn clean install'
-	        sh 'scp -r /usr/share/tomcat8/.jenkins/workspace/Sendx/target/sendx-0.0.1-SNAPSHOT.jar /usr/share/tomcat8/.jenkins/workspace/Sendx/sendx-0.0.1-SNAPSHOT.jar'
+	        sh 'cp -Rp /usr/share/tomcat8/.jenkins/workspace/Sendx/target/sendx-0.0.1-SNAPSHOT.jar /usr/share/tomcat8/.jenkins/workspace/Sendx/sendx-0.0.1-SNAPSHOT.jar'
       }
     } 
   stage('Docker Build') {
