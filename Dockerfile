@@ -7,6 +7,6 @@
 
 
 FROM java:8  
-COPY /target/sendx-0.0.1-SNAPSHOT.war /target/sendx-0.0.1-SNAPSHOT.war
+COPY /target/sendx-0.0.1-SNAPSHOT.jar /target/sendx-0.0.1-SNAPSHOT.jar
 WORKDIR server/target
-CMD ["java","-jar","/target/sendx-0.0.1-SNAPSHOT.war"]
+CMD ["java","-jar","/target/sendx-0.0.1-SNAPSHOT.ar"]
