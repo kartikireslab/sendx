@@ -8,7 +8,6 @@ pipeline {
         	}
       	}
       steps {
-	        sh 'whoami'
 		echo 'Making build.'
 		sh 'mvn clean install'
       }
